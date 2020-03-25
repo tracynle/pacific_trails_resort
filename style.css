@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    height: 100%;
+}
+.row {
+    padding: 20px;
+    flex-wrap: wrap;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+p {
+    font-size: 18px;
+    padding: 20px;
+}
+.description {
+    text-align: center;
+}
+.title {
+    margin-top: 18%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+/* Page Structure */
+.column {
+    float: left;
+    width: 50%;
+    color: #454545;
+}
+.color-border {
+    margin-top: 40px;
+    background-color: #F2E2DE;
+    padding: 40px;
+}
+/* Home Page */
+.aboutheader {
+    text-align: center;
+}
+/* Yurt Page */
+.yurts-link a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.yurts-link a:active {
+    color: #DCC7BE;
+}
+.yurts-link a:hover {
+    color: #0B4F6C;    
+}
+/* Activities */
+.activitiesgallery {
+    padding: 10px;
+}
+/* Reservation Page */
+.package-table {
+    padding: 25px;
+}
+table {
+    border: 2px solid #645244 ;
+    border-collapse: collapse;
+    font-size: 18px;
+    display: inline-table;
+}
+.table-div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #F2E2DE;
+
+}
+td, th {
+    padding: 1.5em;
+    border: 2px solid #6C809A;
+}
+td { text-align: center; }
+.text {text-align: left; }
+tr:nth-last-of-type(odd) { 
+    background-color: #f5fafc;
+}
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 1em;
+}
+/* Contact Page */
+.contact-form {
+    width: 70%;
+    background-color: #F2E2DE;
+    padding: 40px;
+    margin: auto;
+}
+/* sticky navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #5F7A87;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.topnav .icon, .fa .fa-bars {
+    display: none;
+    color: #fff;
+}
+/* Icons styling */
+.fab {
+    padding: 20px;
+}
+.fa-ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 10%;
+    font-size: 18px;
+}
+.ol-li {
+    font-size: 18px;
+}
+video, img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+ul li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+/* parallax scroll images */
+.homebgimg,
+.yurtbgimg,
+.reservationsbgimg,
+.activitiesbgimg,
+.aboutbgimg,
+.contactbgimg { 
+    position: relative;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.homebgimg {
+    background-image: url("images/bigsur.jpg");
+    min-height: 75vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.yurtbgimg {
+    background-image: url("images/greenyurt.jpg");
+    min-height: 75vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.activitiesbgimg {
+    background-image: url("images/map.jpg");
+    min-height: 75vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reservationsbgimg {
+    background-image: url("images/beach.jpg");
+    min-height: 75vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.aboutbgimg {
+    background-image: url("images/group.jpg");
+    min-height: 75vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactbgimg {
+    background-image: url("images/contactbgimg.png");
+    min-height: 30vh;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.deskbgimg {
+    background-image: url("images/desk.jpg");
+    background-size: cover;
+
+}
+/* Header overlay */
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #282E34;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Abel', sans-serif;
+}
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .homebgimg,
+    .reservationsbgimg, 
+    .yurtbgimg,
+    .aboutbgimg,
+    .contactbgimg {
+      background-attachment: scroll;
+    }
+}
+/* Footer */
+footer {
+    background-color: #282E34;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    /* height: 2.5rem; */
+}
+.footer-container {
+    padding: 20px;
+}
+.copyright {
+    text-align: center;
+    color: #fff;
+}
+/* Wrapper to set footer at bottom */
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+/* Media Queries */
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      display: inline-flex;    
+    }
+    .caption span.border {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 426px) {
+    #package-table td, #package-table th {
+        display: block;
+    }
+    #package-table table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #package-table th {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        border: none;
+        overflow: hidden;
+    }
+    td.package::before {
+        content: "Package: ";
+    }
+    td.description::before {
+        content: "Description: ";
+    }
+    td.nights::before {
+        content: "Nights: ";
+    }
+    td.cost::before {
+        content: "Cost: ";
+    }
+    .package, .description, .nights, .cost {
+        width: 100%;
+        position: relative;
+        text-align-last: left;
+    }
+    td::before {
+        width: 25%;
+        display: block;
+        padding-right: 10px;
+        position: absolute;
+        top: 6px;
+        left: 1em;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .caption span.border {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 600px) {
+    form {
+        display: grid;
+        grid-gap: 1em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+        /* width: 60%; */
+    }
+    input[type="submit"] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 20px;
+    }
+    .column, footer, .table-div {
+      width: 100%;
+    }
+    .topnav a:hover {
+        color: black;
+        
+    }
+}
+@media screen and (max-width: 1024px) {
+    form {
+        display: grid;
+        grid-gap: 1em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+    }
+    input[type="submit"] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+    .table-div {
+        width: 100%;
+    }
+}

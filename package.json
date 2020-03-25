@@ -1,0 +1,22 @@
+{
+  "name": "pacific_trails_resort",
+  "version": "1.0.0",
+  "description": "Pacific Trails Resport website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracynle/pacific_trails_resort.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Tracy Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tracynle/pacific_trails_resort/issues"
+  },
+  "homepage": "https://github.com/tracynle/pacific_trails_resort#readme"
+}

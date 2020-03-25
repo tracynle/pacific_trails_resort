@@ -1,2 +1,2 @@
 # pacific_trails_resort
-I created a mobile responsive website that also features a parallax scroll. 
+This website features a parallax scroll and is mobile responsive.
